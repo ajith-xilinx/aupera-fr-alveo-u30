@@ -129,10 +129,8 @@ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card {card_id} --path {binfile}.
 #### An example of the command lines to flash both the xu30 devices:
 
 ```bash
-sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 07:00.1 \
---path /opt/aupera/face-recognition/firmware/xu30-qspi-burn-fr-mtd.bin
-sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 08:00.1 \
---path /opt/aupera/face-recognition/firmware/xu30-qspi-burn-fr-mtd.bin
+sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 07:00.1 --path /opt/aupera/face-recognition/firmware/xu30-qspi-burn-fr-mtd.bin
+sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 08:00.1 --path /opt/aupera/face-recognition/firmware/xu30-qspi-burn-fr-mtd.bin
 ```
 
 ---
