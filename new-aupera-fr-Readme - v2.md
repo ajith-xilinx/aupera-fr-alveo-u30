@@ -17,7 +17,7 @@
   + The product can be purchased with a floating or node-locked license 
   + Download the License Configuration File ( conf.json ), this file will be used in install procedure later
 + Create **cred.json** file ( Access Key ) for your account 
-  + Login to [Xilinx Appstore Page](https://appstore.xilinx.com/) -> Access Key -> Create an Access Key -> Download JSON 
+  + Login to [Xilinx Appstore Page](https://appstore.xilinx.com/) -> Access Keys -> Create an Access Key -> Download JSON 
   + This file identifies your account to the Appstore during runtime and will be used in install procedure later
 
 ---
