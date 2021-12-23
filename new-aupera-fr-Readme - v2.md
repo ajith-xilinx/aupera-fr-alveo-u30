@@ -42,28 +42,28 @@ $ sudo ./host_setup.sh -v 2021.1 --skip-shell-flash
 # 3. U30 Face Recognition Docker Installation
 
 Install Aupera Face Recognition Docker image
+---
+
 ### 3.1 Install essential software and other related packages:
 
----
 
 ```bash
 $ sudo apt update; sudo apt install make build-essential nfs-kernel-server docker docker-containerd docker.io
 $ sudo service rpcbind restart
 $ sudo service nfs-kernel-server restart
 ```
+---
 
 ### 3.2 Pull Auper Face Recognition Docker Image:
-
----
 
 ```bash
 $ sudo docker pull xilinxpartners/aupera_face_recognition:3.0.2
 $ sudo docker images | grep aupera_face_recognition
 ```
+---
 
 ### 3.3 Copy firmware and driver from Docker image
 
----
 
 ```bash
 $ sudo docker create --name {CONTAINER_NAME} xilinxpartners/aupera_face_recognition:3.0.2 bash
