@@ -1,11 +1,3 @@
-Aupera Face Recognition Solution - Accelerated by Xilinx Alveo U30
-====================================================================
-
-Aupera Face Recognition Solution, accelerated by Xilinx Alveo U30 Accelerator Card, is end-to-end commercially deployable solution for facial recognition in the field. Equipped with Aupera proprietary Best-in-Class trained AI model, it has been in field deployment by Tier-1 customers for Smart Building Management, Smart City and Smart Retail Applications. The solution features high accuracy, ensuring data privacy and sovereignty for end customers. The solution includes full software stack and trained AI model, which can be deployed within minutes after license being activated.
-
-
----
-
 # Prerequisites
 + [Alveo U30 Data Center Accelerator Card](https://www.xilinx.com/products/boards-and-kits/alveo/u30.html) ( The card includes two xu30 devices )
 + x86 Ubuntu 18.04 machine. This document will call this computer as the “X86_Host_Computer”. ( The server need to support bifurcation to take advantage of both xu30 Zynq® UltraScale+™ devices on the Alveo U30 card ) 
