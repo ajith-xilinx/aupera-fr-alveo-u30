@@ -25,14 +25,14 @@
 # 2. Host Setup - XRT Installation 
 
 ### 2.1 Clone the Xilinx Base Runtime GitHub Repository:
----
 
 ```bash
 $ git clone https://github.com/Xilinx/Xilinx_Base_Runtime.git 
 $ cd Xilinx_Base_Runtime
 ```
-### 2.2 Run Host Setup Script:
 ---
+### 2.2 Run Host Setup Script:
+
 
 ```bash
 $ sudo ./host_setup.sh -v 2021.1 --skip-shell-flash
