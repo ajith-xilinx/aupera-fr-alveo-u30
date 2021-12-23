@@ -119,7 +119,7 @@ This will give the output similar to:
 #### Flash the U30 board using XRT xbmgmt utility:
 
 ```bash
-$ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card {card_id} --path {binfile}.bin
+sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card {card_id} --path {binfile}.bin
 ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{card_id}** is the BDF ID read from lspci, like 07:00.1<br>
@@ -129,8 +129,8 @@ $ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card {card_id} --path {binfile
 #### An example of the command lines to flash both the xu30 devices:
 
 ```bash
-$ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 07:00.1 --path /opt/aupera/face-recognition/firmware/xu30-qspi-burn-fr-mtd.bin
-$ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 08:00.1 --path /opt/aupera/face-recognition/firmware/xu30-qspi-burn-fr-mtd.bin
+sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 07:00.1 --path /opt/aupera/face-recognition/firmware/xu30-qspi-burn-fr-mtd.bin
+sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 08:00.1 --path /opt/aupera/face-recognition/firmware/xu30-qspi-burn-fr-mtd.bin
 ```
 
 ---
@@ -142,8 +142,8 @@ $ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 08:00.1 --path /opt/auper
 ### 4.2 Install U30 driver
 
 ```bash
-$ cd {NFS_ABS_PATH}/driver
-$ sudo ./install.sh
+cd {NFS_ABS_PATH}/driver
+sudo ./install.sh
 ```
 
 #### Note : Repeat this step ( 4.2 Install U30 driver ) everytime post cold reboot of the server
@@ -162,24 +162,24 @@ $ sudo ./install.sh
 ### 5.2 Docker Run
 
 ```bash
-$ sudo docker run -dit --name {CONTAINER_NAME} -v {NFS_ABS_PATH}:{NFS_ABS_PATH} -e NFS_ABS_PATH={NFS_ABS_PATH} -p 56108:56108 aupera_face_recognition:3.0.2 bash
+sudo docker run -dit --name {CONTAINER_NAME} -v {NFS_ABS_PATH}:{NFS_ABS_PATH} -e NFS_ABS_PATH={NFS_ABS_PATH} -p 56108:56108 aupera_face_recognition:3.0.2 bash
 ```
 
 #### An example of the command line:
 ```bash
-$ sudo docker run -dit --name face_recognition -v /opt/aupera/face-recognition/:/opt/aupera/face-recognition/ -e NFS_ABS_PATH=/opt/aupera/face-recognition/ -p 56108:56108 aupera_face_recognition:3.0.2 bash
+sudo docker run -dit --name face_recognition -v /opt/aupera/face-recognition/:/opt/aupera/face-recognition/ -e NFS_ABS_PATH=/opt/aupera/face-recognition/ -p 56108:56108 aupera_face_recognition:3.0.2 bash
 ```
 ---
 
 ### 5.3 Start Face Recognition Service
 
 ```bash
-$ sudo docker container exec -it {CONTAINER_NAME} bash start.sh
+sudo docker container exec -it {CONTAINER_NAME} bash start.sh
 ```
 
 #### An example of the command line:
 ```bash
-$ sudo docker container exec -it face_recognition bash start.sh
+sudo docker container exec -it face_recognition bash start.sh
 ```
 
 ---
