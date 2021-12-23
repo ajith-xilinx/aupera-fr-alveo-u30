@@ -71,7 +71,7 @@ sudo docker cp {CONTAINER_NAME}:/root/firmware {NFS_ABS_PATH}
 ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{CONTAINER_NAME}** is a user defined container name, like "face_recognition"<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{NFS_ABS_PATH}** is local directory where firmware and driver will copied to, like "/opt/aupera/face-recognition"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp;<a name="NFS_ABS_PATH"></a> **{NFS_ABS_PATH}** is local directory where firmware and driver will copied to, like "/opt/aupera/face-recognition"
 
 #### An example of the command line:
 ```bash
@@ -155,7 +155,7 @@ sudo ./install.sh
 ### 5.1 Copy Access Key & License Configuration Files to DRM Path
 
 + Refer to **[Section 1](#Section-1)** above to generate Access Key File (cred.json) and choose a License Configuration File (conf.json)
-+ Copy both the files to {NFS_ABS_PATH}/drm.
++ Copy both the files to [{NFS_ABS_PATH}](#NFS_ABS_PATH)/drm.
 
 ---
 
