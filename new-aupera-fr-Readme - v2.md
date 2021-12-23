@@ -154,7 +154,7 @@ sudo ./install.sh
 
 ### 5.1 Copy Access Key & License Configuration Files to DRM Path
 
-+ **Refer to above "Section 1" to generate Access Key File (cred.json) and choose a License Configuration File (conf.json)**<br>
++ **Refer to above Section 1[#Section 1] to generate Access Key File (cred.json) and choose a License Configuration File (conf.json)**<br>
 + Copy both the files to {NFS_ABS_PATH}/drm.
 
 ---
