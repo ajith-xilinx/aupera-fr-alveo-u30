@@ -27,8 +27,8 @@
 ### 2.1 Clone the Xilinx Base Runtime GitHub Repository:
 
 ```bash
-\\$ git clone https://github.com/Xilinx/Xilinx_Base_Runtime.git 
-$ cd Xilinx_Base_Runtime
+git clone https://github.com/Xilinx/Xilinx_Base_Runtime.git 
+cd Xilinx_Base_Runtime
 ```
 ---
 ### 2.2 Run Host Setup Script:
