@@ -143,7 +143,14 @@ $ sudo ./install.sh
 
 ## 5. Run Docker
 
-### 5.1 Docker Run
+### 5.1 Copy Access Key & License Files to DRM path
+
++ **Refer to above section 1 to generate a license file (cred.json) and choose a configuration file (conf.json)**<br>
++ Copy both the files to {NFS_ABS_PATH}/drm.
+
+---
+
+### 5.2 Docker Run
 
 ```bash
 $ sudo docker run -dit --name {CONTAINER_NAME} -v {NFS_ABS_PATH}:{NFS_ABS_PATH} -e NFS_ABS_PATH={NFS_ABS_PATH} -p 56108:56108 aupera_face_recognition:3.0.2 bash
@@ -153,15 +160,9 @@ $ sudo docker run -dit --name {CONTAINER_NAME} -v {NFS_ABS_PATH}:{NFS_ABS_PATH} 
 ```bash
 $ sudo docker run -dit --name face_recognition -v /opt/aupera/face-recognition/:/opt/aupera/face-recognition/ -e NFS_ABS_PATH=/opt/aupera/face-recognition/ -p 56108:56108 aupera_face_recognition:3.0.2 bash
 ```
-
-- - -
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **Refer to above section 1 to generate a license file (cred.json) and choose a configuration file (conf.json)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; Copy both the files to {NFS_ABS_PATH}/drm.
-
 ---
 
-### 5.2 Start Face Recognition Service
+### 5.3 Start Face Recognition Service
 
 ```bash
 $ sudo docker container exec -it {CONTAINER_NAME} bash start.sh
