@@ -93,7 +93,7 @@ sudo docker cp face_recognition:/root/firmware /opt/aupera/face-recognition
 source /opt/xilinx/xrt/setup.sh
 xbutil --version
 ```
-This will give output similar to:
+This will give the output similar to:
 ```
 XCLMGMT: 2.11.634
 ```
