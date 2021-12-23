@@ -15,7 +15,7 @@
 + Obtain an entitlement to evaluate the Aupera Facial Recognition product. See "Try or Buy" Section at the Top of this page. 
   + **Free Trial** is also available
   + The product can be purchased with a floating or node-locked license 
-  + Download the License file ( conf.json ), this file will be used in install procedure later
+  + Download the License Configuration File ( conf.json ), this file will be used in install procedure later
 + Create **cred.json** file ( Access Key ) for your account 
   + Login to [Xilinx Appstore Page](https://appstore.xilinx.com/) -> Access Key -> Create an Access Key -> Download JSON 
   + This file identifies your account to the Appstore during runtime and will be used in install procedure later
@@ -152,9 +152,9 @@ sudo ./install.sh
 
 ## 5. Run Docker
 
-### 5.1 Copy Access Key & License Files to DRM Path
+### 5.1 Copy Access Key & License Configuration Files to DRM Path
 
-+ **Refer to above section 1 to generate a license file (cred.json) and choose a configuration file (conf.json)**<br>
++ **Refer to above section 1 to generate a access file (cred.json) and choose a license configuration file (conf.json)**<br>
 + Copy both the files to {NFS_ABS_PATH}/drm.
 
 ---
