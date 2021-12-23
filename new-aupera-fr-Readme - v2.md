@@ -26,9 +26,12 @@
 
 ### 2.1 Clone the Xilinx Base Runtime GitHub Repository:
 
-```bash
+```sh
 git clone https://github.com/Xilinx/Xilinx_Base_Runtime.git 
 cd Xilinx_Base_Runtime
+
+winter="The winter is sparkling and frozen!"
+echo $winter # The winter is sparkling and frozen!
 ```
 ---
 ### 2.2 Run Host Setup Script:
