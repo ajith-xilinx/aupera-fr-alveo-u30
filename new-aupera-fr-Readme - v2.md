@@ -93,14 +93,20 @@ sudo docker cp face_recognition:/root/firmware /opt/aupera/face-recognition
 source /opt/xilinx/xrt/setup.sh
 xbutil --version
 ```
-This will give output similar to `XCLMGMT: 2.11.634`
+This will give output similar to:
+```
+XCLMGMT: 2.11.634
+```
 
 ---
 
 #### Run lspci command to validate the U30 board seen by the OS
 
 ```bash
-$ sudo lspci -d 10ee:
+sudo lspci -d 10ee:
+```
+This will give the output similar to:
+```bash
 07:00.0 Processing accelerators: Xilinx Corporation Device 503d (rev 02)
 07:00.1 Processing accelerators: Xilinx Corporation Device 503c (rev 02)
 08:00.0 Processing accelerators: Xilinx Corporation Device 503d (rev 02)
