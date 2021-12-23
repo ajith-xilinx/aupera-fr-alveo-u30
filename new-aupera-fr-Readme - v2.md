@@ -152,7 +152,7 @@ sudo ./install.sh
 
 ## 5. Run Docker
 
-### 5.1 Copy Access Key & License Files to DRM path
+### 5.1 Copy Access Key & License Files to DRM Path
 
 + **Refer to above section 1 to generate a license file (cred.json) and choose a configuration file (conf.json)**<br>
 + Copy both the files to {NFS_ABS_PATH}/drm.
