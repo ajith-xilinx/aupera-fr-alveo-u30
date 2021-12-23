@@ -26,19 +26,16 @@
 
 ### 2.1 Clone the Xilinx Base Runtime GitHub Repository:
 
-```sh
+```bash
 git clone https://github.com/Xilinx/Xilinx_Base_Runtime.git 
 cd Xilinx_Base_Runtime
-
-winter="The winter is sparkling and frozen!"
-echo $winter # The winter is sparkling and frozen!
 ```
 ---
 ### 2.2 Run Host Setup Script:
 
 
 ```bash
-$ sudo ./host_setup.sh -v 2021.1 --skip-shell-flash
+sudo ./host_setup.sh -v 2021.1 --skip-shell-flash
 ```
 ---
 
@@ -50,17 +47,17 @@ Install Aupera Face Recognition Docker image
 
 
 ```bash
-$ sudo apt update; sudo apt install make build-essential nfs-kernel-server docker docker-containerd docker.io
-$ sudo service rpcbind restart
-$ sudo service nfs-kernel-server restart
+sudo apt update; sudo apt install make build-essential nfs-kernel-server docker docker-containerd docker.io
+sudo service rpcbind restart
+sudo service nfs-kernel-server restart
 ```
 ---
 
 ### 3.2 Pull Auper Face Recognition Docker Image:
 
 ```bash
-$ sudo docker pull xilinxpartners/aupera_face_recognition:3.0.2
-$ sudo docker images | grep aupera_face_recognition
+sudo docker pull xilinxpartners/aupera_face_recognition:3.0.2
+sudo docker images | grep aupera_face_recognition
 ```
 ---
 
@@ -68,9 +65,9 @@ $ sudo docker images | grep aupera_face_recognition
 
 
 ```bash
-$ sudo docker create --name {CONTAINER_NAME} xilinxpartners/aupera_face_recognition:3.0.2 bash
-$ sudo docker cp {CONTAINER_NAME}:/root/driver {NFS_ABS_PATH}
-$ sudo docker cp {CONTAINER_NAME}:/root/firmware {NFS_ABS_PATH}
+sudo docker create --name {CONTAINER_NAME} xilinxpartners/aupera_face_recognition:3.0.2 bash
+sudo docker cp {CONTAINER_NAME}:/root/driver {NFS_ABS_PATH}
+sudo docker cp {CONTAINER_NAME}:/root/firmware {NFS_ABS_PATH}
 ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{CONTAINER_NAME}** is a user defined container name, like "face_recognition"<br>
@@ -78,9 +75,9 @@ $ sudo docker cp {CONTAINER_NAME}:/root/firmware {NFS_ABS_PATH}
 
 #### An example of the command line:
 ```bash
-$ sudo docker create --name face_recognition xilinxpartners/aupera_face_recognition:3.0.2 bash
-$ sudo docker cp face_recognition:/root/driver /opt/aupera/face-recognition
-$ sudo docker cp face_recognition:/root/firmware /opt/aupera/face-recognition
+sudo docker create --name face_recognition xilinxpartners/aupera_face_recognition:3.0.2 bash
+sudo docker cp face_recognition:/root/driver /opt/aupera/face-recognition
+sudo docker cp face_recognition:/root/firmware /opt/aupera/face-recognition
 ```
 
 ---
@@ -93,8 +90,11 @@ $ sudo docker cp face_recognition:/root/firmware /opt/aupera/face-recognition
 #### Source XRT env and check the current XRT version. Currently XRT version 2.11 or above are required for the firmware installation.
 
 ```bash
-$ source /opt/xilinx/xrt/setup.sh
-$ xbutil --version
+source /opt/xilinx/xrt/setup.sh
+xbutil --version
+```
+This will give output as: 
+```
 XCLMGMT: 2.11.634
 ```
 ---
