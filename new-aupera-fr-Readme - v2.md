@@ -1,4 +1,4 @@
-# Prerequisites
+## Prerequisites
 + [Alveo U30 Data Center Accelerator Card](https://www.xilinx.com/products/boards-and-kits/alveo/u30.html) ( The card includes two xu30 devices )
 + x86 Ubuntu 18.04 machine. This document will call this computer as the “X86_Host_Computer”. ( The server need to support bifurcation to take advantage of both xu30 Zynq® UltraScale+™ devices on the Alveo U30 card ) 
 + Xilinx Appstore Access Key & Face Recognition Product License file
@@ -9,7 +9,7 @@
 
 ---
 
-# 1. Xilinx Appstore Account & Face Recognition Product License 
+## 1. Xilinx Appstore Account & Face Recognition Product License 
 
 + Create an account on [Xilinx Appstore](https://appstore.xilinx.com/) 
 + Obtain an entitlement to evaluate the Aupera Facial Recognition product. See "Try or Buy" Section at the Top of this page. 
@@ -22,7 +22,7 @@
 
 ---
 
-# 2. Host Setup - XRT Installation 
+## 2. Host Setup - XRT Installation 
 
 ### 2.1 Clone the Xilinx Base Runtime GitHub Repository:
 
@@ -39,7 +39,7 @@ $ sudo ./host_setup.sh -v 2021.1 --skip-shell-flash
 ```
 ---
 
-# 3. U30 Face Recognition Docker Installation
+## 3. U30 Face Recognition Docker Installation
 
 Install Aupera Face Recognition Docker image
 ---
@@ -83,7 +83,7 @@ $ sudo docker cp face_recognition:/root/firmware /opt/aupera/face-recognition
 
 ---
 
-# 4. Setting up Alveo U30 Card
+## 4. Setting up Alveo U30 Card
 ### 4.1 Install U30 firmware
 #### Source XRT env and check the current XRT version. Currently XRT version 2.11 or above are required for the firmware installation.
 ---
@@ -142,7 +142,7 @@ $ sudo ./install.sh
 
 ---
 
-# 5. Run Docker
+## 5. Run Docker
 
 ### 5.1 Docker Run
 
@@ -175,7 +175,7 @@ $ sudo docker container exec -it face_recognition bash start.sh
 
 ---
 
-# 6. Install the client software on Windows_Client_PC
+## 6. Install the client software on Windows_Client_PC
 #### Perform the below steps on Windows_Client_PC : 
 + Download **Aupera Face Recognition Client Software** from [Aupera Download Page](https://auperatechnologies.com/downloads/)
 + Extact the downloaded **dist.zip** file & go to the path : **dist\dist\client**
@@ -185,7 +185,7 @@ For detailed instructions please refer to the section 5 of [Aupera_FR_U30_User g
 
 ---
 
-# 7. Perform the Test
+## 7. Perform the Test
 #### There are two ways to perform the Test: 
 
 + Connect IP camera to setup live streaming
@@ -197,6 +197,6 @@ For detailed instructions please refer to the section 5 of [Aupera_FR_U30_User g
 
 ---
 
-# 8. Results
+## 8. Results
 Once you complete above setting, you should be able to click ‘View Live Result’ on the in the Aupera’s Windows Client Software and view the face recognition result.
 ![Results](assets/aupera_facial_recognition/results.png)
