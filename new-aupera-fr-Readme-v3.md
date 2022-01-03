@@ -100,7 +100,7 @@ XCLMGMT: 2.11.634
 
 ---
 
-#### Run lspci command to validate the U30 board seen by the OS
+#### Run "lspci" command to validate the U30 board seen by the OS
 
 ```bash
 sudo lspci -d 10ee:
