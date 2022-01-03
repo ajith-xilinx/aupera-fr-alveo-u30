@@ -5,7 +5,7 @@
 # Prerequisites
 + [Alveo U30 Data Center Accelerator Card](https://www.xilinx.com/products/boards-and-kits/alveo/u30.html) ( The card includes two xu30 Zynq® UltraScale+™ devices )
 + x86 Ubuntu 18.04 machine. This document will call this computer as the “X86_Host_Computer”. 
-++ ( The server need to support bifurcation to take advantage of both xu30 Zynq® UltraScale+™ devices on the Alveo U30 card ) 
+  + ( The server need to support bifurcation to take advantage of both xu30 Zynq® UltraScale+™ devices on the Alveo U30 card ) 
 + Xilinx Appstore Access Key & Face Recognition Product License file
 + Xilinx Runtime (XRT) host application
 + Aupera Face Recognition Docker Image
