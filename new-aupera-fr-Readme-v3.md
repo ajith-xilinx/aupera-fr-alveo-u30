@@ -204,7 +204,7 @@ For detailed instructions please refer to the section 5 of [Aupera_FR_U30_User g
 
 ### Detailed Instructions are included in [Aupera_FR_U30_User guide](https://www.xilinx.com/content/dam/xilinx/publications/user-guide/partner/aupera-user-guide.pdf)
 + For instructions to connect IP Camera, please refer to section 5.3.1.1 <br>
-+ For instructions to Upload pre-recorded video clip & stream through FFMPEG RTSP, please refer to 5.5 Frequent Q&A (3) and (4)
++ For instructions to Upload pre-recorded video clip & stream through FFMPEG RTSP, please refer to 5.5 Frequent Q&A (3) & (4)
 
 ---
 
