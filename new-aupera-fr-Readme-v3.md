@@ -87,7 +87,7 @@ sudo docker cp face_recognition:/root/firmware /opt/aupera/face-recognition
 ---
 
 # 4. Setting up Alveo U30 Card
-## 4.1 Install U30 firmware
+## 4.1 Install U30 Firmware
 
 <b> Source XRT env and check the current XRT version. Currently XRT version 2.11 or above are required for the firmware installation. </b>
 
@@ -141,7 +141,7 @@ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 08:00.1 --path /opt/aupera/
 
 ---
 
-## 4.2 Install U30 driver
+## 4.2 Install U30 Driver
 
 ```bash
 cd {NFS_ABS_PATH}/driver
