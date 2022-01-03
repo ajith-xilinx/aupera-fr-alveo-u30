@@ -124,7 +124,7 @@ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card {card_id} --path {binfile}.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{card_id}** is the BDF ID read from lspci, like 07:00.1<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{binfile}** is the file name of the Aupera firmware QSPI flash dump file in the directory {NFS_ABS_PATH}/firmware/<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **Flash another xu30 device with the second card_id (like 08:00:1) read from lspci & using the same flash dump file**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **Flash another xu30 device with the second card_id read from lspci (like 08:00:1) & using the same flash dump file**
 
 #### An example of the command lines to flash both the xu30 devices:
 
