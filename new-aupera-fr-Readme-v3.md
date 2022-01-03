@@ -89,7 +89,7 @@ sudo docker cp face_recognition:/root/firmware /opt/aupera/face-recognition
 # 4. Setting up Alveo U30 Card
 ## 4.1 Install U30 firmware
 
-#### Source XRT env and check the current XRT version. Currently XRT version 2.11 or above are required for the firmware installation.
+<b> Source XRT env and check the current XRT version. Currently XRT version 2.11 or above are required for the firmware installation. </b>
 
 ```bash
 source /opt/xilinx/xrt/setup.sh
@@ -102,7 +102,7 @@ XCLMGMT: 2.11.634
 
 ---
 
-#### Run "lspci" command to validate the U30 board seen by the OS
+<b> Run "lspci" command to validate the U30 board seen by the OS </b>
 
 ```bash
 sudo lspci -d 10ee:
@@ -118,7 +118,7 @@ This will give the output similar to:
 
 ---
 
-#### Flash the U30 board using XRT xbmgmt utility:
+<b> Flash the U30 board using XRT xbmgmt utility: </b>
 
 ```bash
 sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card {card_id} --path {binfile}.bin
@@ -137,7 +137,7 @@ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 08:00.1 --path /opt/aupera/
 
 ---
 
-#### After flash, cold reboot server. Please do not use ‘sudo poweroff’ or ‘sudo reboot’ command.
+<b> After flash, cold reboot server. Please do not use ‘sudo poweroff’ or ‘sudo reboot’ command. </b>
 
 ---
 
@@ -148,7 +148,7 @@ cd {NFS_ABS_PATH}/driver
 sudo ./install.sh
 ```
 
-#### Note : Repeat this step ( 4.2 Install U30 driver ) everytime post cold reboot of the server
+<b> Note : Repeat this step ( 4.2 Install U30 driver ) everytime post cold reboot of the server. </b>
 
 ---
 
