@@ -128,7 +128,7 @@ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card {card_id} --path {binfile}.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{binfile}** is the file name of the Aupera firmware QSPI flash dump file in the directory {NFS_ABS_PATH}/firmware/<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **Flash another xu30 device with the second card_id read from lspci (like 08:00:1) using the same flash dump binfile**
 
-<b> An example of the command lines to flash both the xu30 devices:
+<b> An example of the command lines to flash both the xu30 devices: </b>
 
 ```bash
 sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 07:00.1 --path /opt/aupera/face-recognition/firmware/xu30-qspi-burn-fr-mtd.bin
@@ -167,7 +167,7 @@ sudo ./install.sh
 sudo docker run -dit --name {CONTAINER_NAME} -v {NFS_ABS_PATH}:{NFS_ABS_PATH} -e NFS_ABS_PATH={NFS_ABS_PATH} -p 56108:56108 aupera_face_recognition:3.0.2 bash
 ```
 
-<b> An example of the command line: 
+<b> An example of the command line: </b>
 ```bash
 sudo docker run -dit --name face_recognition -v /opt/aupera/face-recognition/:/opt/aupera/face-recognition/ -e NFS_ABS_PATH=/opt/aupera/face-recognition/ -p 56108:56108 aupera_face_recognition:3.0.2 bash
 ```
@@ -179,7 +179,7 @@ sudo docker run -dit --name face_recognition -v /opt/aupera/face-recognition/:/o
 sudo docker container exec -it {CONTAINER_NAME} bash start.sh
 ```
 
-<b> An example of the command line:
+<b> An example of the command line: </b>
 ```bash
 sudo docker container exec -it face_recognition bash start.sh
 ```
