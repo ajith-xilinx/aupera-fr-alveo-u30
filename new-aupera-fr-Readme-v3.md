@@ -73,7 +73,7 @@ sudo docker cp {CONTAINER_NAME}:/root/firmware {NFS_ABS_PATH}
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{CONTAINER_NAME}** is a user defined container name, like "face_recognition"<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{NFS_ABS_PATH}** is local directory where firmware and driver will copied to, like "/opt/aupera/face-recognition"
 
-### An example of the command line:
+#### An example of the command line:
 ```bash
 sudo docker create --name face_recognition xilinxpartners/aupera_face_recognition:3.0.2 bash
 sudo docker cp face_recognition:/root/driver /opt/aupera/face-recognition
@@ -135,7 +135,7 @@ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 08:00.1 --path /opt/aupera/
 
 ---
 
-#### After flash, cold reboot server. Please do not use ‘sudo poweroff’ or ‘sudo reboot’ command.
+### After flash, cold reboot server. Please do not use ‘sudo poweroff’ or ‘sudo reboot’ command.
 
 ---
 
