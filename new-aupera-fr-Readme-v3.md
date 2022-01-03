@@ -13,7 +13,7 @@
 
 + Create an account on [Xilinx Appstore](https://appstore.xilinx.com/) 
 + Obtain an entitlement to evaluate the Aupera Facial Recognition product. See "Try or Buy" Section at the Top of this page. 
-  + **Free Trial** is also available
+  + **Free Trial** is available
   + The product can be purchased with a floating or node-locked license 
   + Download the License Configuration File ( conf.json ), this file will be used in install procedure later
 + Create **cred.json** file ( Access Key ) for your account 
