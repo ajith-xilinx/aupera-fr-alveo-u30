@@ -47,7 +47,7 @@ sudo ./host_setup.sh -v 2021.1 --skip-shell-flash
 
 <b> Install Aupera Face Recognition Docker image </b>
 
-## 3.1 Install essential software and other related packages:
+## 3.1 Install essential software and other related packages
 
 
 ```bash
@@ -57,7 +57,7 @@ sudo service nfs-kernel-server restart
 ```
 ---
 
-## 3.2 Pull Auper Face Recognition Docker Image:
+## 3.2 Pull Auper Face Recognition Docker Image
 
 ```bash
 sudo docker pull xilinxpartners/aupera_face_recognition:3.0.2
