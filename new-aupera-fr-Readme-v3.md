@@ -28,7 +28,7 @@
 
 # 2. Host Setup - XRT Installation 
 
-## 2.1 Clone the Xilinx Base Runtime GitHub Repository:
+## 2.1 Clone the Xilinx Base Runtime GitHub Repository
 
 ```bash
 git clone https://github.com/Xilinx/Xilinx_Base_Runtime.git 
