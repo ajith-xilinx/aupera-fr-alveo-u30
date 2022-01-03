@@ -65,7 +65,7 @@ sudo docker images | grep aupera_face_recognition
 ```
 ---
 
-## 3.3 Copy firmware and driver from Docker image
+## 3.3 Copy Firmware and Driver from Docker image
 
 
 ```bash
