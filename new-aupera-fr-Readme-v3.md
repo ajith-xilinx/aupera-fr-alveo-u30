@@ -95,7 +95,7 @@ sudo docker cp face_recognition:/root/firmware /opt/aupera/face-recognition
 source /opt/xilinx/xrt/setup.sh
 xbutil --version
 ```
-This will give the output similar to:
+<b> This will give the output similar to: </b>
 ```
 XCLMGMT: 2.11.634
 ```
@@ -107,7 +107,7 @@ XCLMGMT: 2.11.634
 ```bash
 sudo lspci -d 10ee:
 ```
-This will give the output similar to:
+<b> This will give the output similar to: </b>
 ```bash
 07:00.0 Processing accelerators: Xilinx Corporation Device 503d (rev 02)
 07:00.1 Processing accelerators: Xilinx Corporation Device 503c (rev 02)
