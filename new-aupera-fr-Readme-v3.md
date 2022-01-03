@@ -187,7 +187,7 @@ sudo docker container exec -it face_recognition bash start.sh
 ---
 
 # 6. Install the client software on Windows_Client_PC
-### Perform the below steps on Windows_Client_PC : 
+### Perform below steps on Windows_Client_PC : 
 + Download **Aupera Face Recognition Client Software** from [Aupera Download Page](https://auperatechnologies.com/downloads/)
 + Extact the downloaded **dist.zip** file & go to the path : **dist\dist\client**
 + Run **client.exe** Application. This will setup Client Software on Windows_Client_PC
