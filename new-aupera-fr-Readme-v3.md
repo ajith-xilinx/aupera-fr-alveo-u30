@@ -41,7 +41,7 @@ sudo ./host_setup.sh -v 2021.1 --skip-shell-flash
 
 # 3. U30 Face Recognition Docker Installation
 
-Install Aupera Face Recognition Docker image
+<b> Install Aupera Face Recognition Docker image </b>
 
 ## 3.1 Install essential software and other related packages:
 
