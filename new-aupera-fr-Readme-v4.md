@@ -158,12 +158,18 @@ sudo ./install.sh
 
 ## 5.1 Copy Access Key & License Configuration Files to DRM Path
 
-Refer to **[Section 1](#Section-1)** above to generate Access Key File (cred.json) and copt to `{NFS_ABS_PATH}/drm` path
-Copy License Configuration file : 
-For Floating Licence Configuration : 
-`cp {NFS_ABS_PATH}/drm/floating/conf.json {NFS_ABS_PATH}/drm/conf.json
+Refer to **[Section 1](#Section-1)** above to generate Access Key File (cred.json) and copt to `{NFS_ABS_PATH}/drm` path </br>
+Copy License Configuration file : <br>
+For Floating Licence Configuration :
+
+```bash
+cp {NFS_ABS_PATH}/drm/floating/conf.json {NFS_ABS_PATH}/drm/conf.json
+```bash
+
 For Nodelock Licence Configuration : 
-`cp {NFS_ABS_PATH}/drm/nodelocked/conf.json {NFS_ABS_PATH}/drm/conf.json
+```bash
+cp {NFS_ABS_PATH}/drm/nodelocked/conf.json {NFS_ABS_PATH}/drm/conf.json
+```bash
 ---
 
 ## 5.2 Docker Run
