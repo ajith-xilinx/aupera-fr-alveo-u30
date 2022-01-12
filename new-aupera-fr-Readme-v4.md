@@ -65,13 +65,14 @@ sudo docker images | grep aupera_face_recognition
 ```
 ---
 
-## 3.3 Copy Firmware and Driver from Docker image
+## 3.3 Copy Firmware, Driver & License configuration file from Docker image
 
 
 ```bash
 sudo docker create --name {CONTAINER_NAME} auperastor/aupera_face_recognition:3.0.2 bash
 sudo docker cp {CONTAINER_NAME}:/root/driver {NFS_ABS_PATH}
 sudo docker cp {CONTAINER_NAME}:/root/firmware {NFS_ABS_PATH}
+sudo docker cp {CONTAINER_NAME}:/root/drm {NFS_ABS_PATH}
 ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{CONTAINER_NAME}** is a user defined container name, like "face_recognition"<br>
@@ -82,6 +83,7 @@ sudo docker cp {CONTAINER_NAME}:/root/firmware {NFS_ABS_PATH}
 sudo docker create --name face_recognition auperastor/aupera_face_recognition:3.0.2 bash
 sudo docker cp face_recognition:/root/driver /opt/aupera/face-recognition
 sudo docker cp face_recognition:/root/firmware /opt/aupera/face-recognition
+sudo docker cp face_recognition:/root/drm /opt/aupera/face-recognition
 ```
 
 ---
