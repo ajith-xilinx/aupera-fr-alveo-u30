@@ -204,7 +204,7 @@ sudo docker container exec -it face_recognition bash start.sh
 + Extact the downloaded **dist.zip** file & go to the path : **dist\dist\client**
 + Run **client.exe** Application. This will setup Client Software on Windows_Client_PC
 
-For detailed instructions please refer to the section 5 of [Aupera_FR_U30_User guide.](https://www.xilinx.com/content/dam/xilinx/publications/user-guide/partner/aupera-user-guide.pdf)
+For detailed instructions please refer to the section 5 of [Aupera_FR_U30_User guide.](https://www.xilinx.com/content/dam/xilinx/publications/user-guide/partner/aupera-user-guide.pdf) </br>
 Note : Turn off any firewall settings that blocking Client-Server communication. ( Eg Firewall : McAfee, Windows defender etc ) 
 
 ---
