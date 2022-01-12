@@ -70,8 +70,8 @@ sudo docker images | grep aupera_face_recognition
 
 ```bash
 sudo docker create --name {CONTAINER_NAME} auperastor/aupera_face_recognition:3.0.2 bash
-sudo docker cp {CONTAINER_NAME}:/root/driver {NFS_ABS_PATH}
 sudo docker cp {CONTAINER_NAME}:/root/firmware {NFS_ABS_PATH}
+sudo docker cp {CONTAINER_NAME}:/root/driver {NFS_ABS_PATH}
 sudo docker cp {CONTAINER_NAME}:/root/drm {NFS_ABS_PATH}
 ```
 
@@ -81,8 +81,8 @@ sudo docker cp {CONTAINER_NAME}:/root/drm {NFS_ABS_PATH}
 <b> An example of the command line: </b>
 ```bash
 sudo docker create --name face_recognition auperastor/aupera_face_recognition:3.0.2 bash
-sudo docker cp face_recognition:/root/driver /opt/aupera/face-recognition
 sudo docker cp face_recognition:/root/firmware /opt/aupera/face-recognition
+sudo docker cp face_recognition:/root/driver /opt/aupera/face-recognition
 sudo docker cp face_recognition:/root/drm /opt/aupera/face-recognition
 ```
 
@@ -159,8 +159,11 @@ sudo ./install.sh
 ## 5.1 Copy Access Key & License Configuration Files to DRM Path
 
 + Refer to **[Section 1](#Section-1)** above to generate Access Key File (cred.json) and copt to `{NFS_ABS_PATH}/drm` path
-+ Copy both the files to {NFS_ABS_PATH/drm} path. NFS_ABS_PATH is local directory, like "/opt/aupera/face-recognition"
-
++ Copy License Configuration file : 
++ For Floating Licence Configuration : 
+++ `cp {NFS_ABS_PATH}/drm/floating/conf.json {NFS_ABS_PATH}/drm/conf.json
++ For Nodelock Licence Configuration : 
+++ `cp {NFS_ABS_PATH}/drm/nodelocked/conf.json {NFS_ABS_PATH}/drm/conf.json
 ---
 
 ## 5.2 Docker Run
