@@ -60,7 +60,7 @@ sudo service nfs-kernel-server restart
 ## 3.2 Pull Auper Face Recognition Docker Image
 
 ```bash
-sudo docker pull xilinxpartners/aupera_face_recognition:3.0.2
+sudo docker pull auperastor/aupera_face_recognition:3.0.2
 sudo docker images | grep aupera_face_recognition
 ```
 ---
@@ -69,7 +69,7 @@ sudo docker images | grep aupera_face_recognition
 
 
 ```bash
-sudo docker create --name {CONTAINER_NAME} xilinxpartners/aupera_face_recognition:3.0.2 bash
+sudo docker create --name {CONTAINER_NAME} auperastor/aupera_face_recognition:3.0.2 bash
 sudo docker cp {CONTAINER_NAME}:/root/driver {NFS_ABS_PATH}
 sudo docker cp {CONTAINER_NAME}:/root/firmware {NFS_ABS_PATH}
 ```
@@ -79,7 +79,7 @@ sudo docker cp {CONTAINER_NAME}:/root/firmware {NFS_ABS_PATH}
 
 <b> An example of the command line: </b>
 ```bash
-sudo docker create --name face_recognition xilinxpartners/aupera_face_recognition:3.0.2 bash
+sudo docker create --name face_recognition auperastor/aupera_face_recognition:3.0.2 bash
 sudo docker cp face_recognition:/root/driver /opt/aupera/face-recognition
 sudo docker cp face_recognition:/root/firmware /opt/aupera/face-recognition
 ```
