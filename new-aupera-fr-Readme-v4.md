@@ -164,12 +164,12 @@ For Floating Licence Configuration :
 
 ```bash
 cp {NFS_ABS_PATH}/drm/floating/conf.json {NFS_ABS_PATH}/drm/conf.json
-```bash
+```
 
 For Nodelock Licence Configuration : 
 ```bash
 cp {NFS_ABS_PATH}/drm/nodelocked/conf.json {NFS_ABS_PATH}/drm/conf.json
-```bash
+```
 ---
 
 ## 5.2 Docker Run
