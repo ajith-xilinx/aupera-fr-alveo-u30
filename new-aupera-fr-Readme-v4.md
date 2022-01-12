@@ -2,47 +2,6 @@
 
 ---
 
-# Prerequisites
-+ [Alveo U30 Data Center Accelerator Card](https://www.xilinx.com/products/boards-and-kits/alveo/u30.html) ( The card includes two xu30 Zynq® UltraScale+™ devices )
-+ x86 Ubuntu 18.04 machine. This document will call this computer as the “X86_Host_Computer”. ( The server needs to support bifurcation to take advantage of both xu30 Zynq® UltraScale+™ devices on the Alveo U30 card ) 
-+ Xilinx Appstore Access Key & Face Recognition Product License file
-+ Xilinx Runtime (XRT) host application
-+ Aupera Face Recognition Docker Image
-+ Aupera Client Software, for operation interaction and results viewing 
-+ Windows PC to install Aupera Client Software. This document will call this computer as the “Windows_Client_PC”
-
----
-
-# <a name="Section-1"></a> 1. Xilinx Appstore Account & Face Recognition Product Access Key 
-
-+ Create an account on [Xilinx Appstore](https://appstore.xilinx.com/) 
-+ Obtain an entitlement to evaluate the Aupera Facial Recognition product. See "Try or Buy" Section at the Top of this page. 
-  + **Free Trial** is available
-  + The product can be purchased with a floating or node-locked license 
-  + Download the License Configuration File ( conf.json ), this file will be used in install procedure later
-+ Create **cred.json** file ( Access Key ) for your account 
-  + Login to [Xilinx Appstore Page](https://appstore.xilinx.com/) -> Access Keys -> Create an Access Key -> Download JSON 
-  + This file identifies your account to the Appstore during runtime and will be used in install procedure later
-
----
-
-# 2. Host Setup - XRT Installation 
-
-## 2.1 Clone the Xilinx Base Runtime GitHub Repository
-
-```bash
-git clone https://github.com/Xilinx/Xilinx_Base_Runtime.git 
-cd Xilinx_Base_Runtime
-```
----
-## 2.2 Run Host Setup Script:
-
-
-```bash
-sudo ./host_setup.sh -v 2021.1 --skip-shell-flash
-```
----
-
 # 3. U30 Face Recognition Docker Installation
 
 <b> Install Aupera Face Recognition Docker image </b>
