@@ -105,7 +105,7 @@ cd {NFS_ABS_PATH}/driver
 sudo ./install.sh
 ```
 
-<b> Note: Repeat this step ( 4.2 Install U30 driver ) everytime post cold reboot of the server. </b>
+<b> Note: Repeat this step (3.2 Install U30 Driver) everytime post cold reboot of the server. </b>
 
 ---
 
