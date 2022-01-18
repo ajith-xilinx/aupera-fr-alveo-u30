@@ -4,8 +4,6 @@
 
 # 2. U30 Face Recognition Docker Installation
 
-<b> Install Aupera Face Recognition Docker image </b>
-
 ## 2.1 Install essential software and other related packages
 
 
