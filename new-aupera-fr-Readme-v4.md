@@ -2,11 +2,11 @@
 
 ---
 
-# 3. U30 Face Recognition Docker Installation
+# 2. U30 Face Recognition Docker Installation
 
 <b> Install Aupera Face Recognition Docker image </b>
 
-## 3.1 Install essential software and other related packages
+## 2.1 Install essential software and other related packages
 
 
 ```bash
@@ -16,7 +16,7 @@ sudo service nfs-kernel-server restart
 ```
 ---
 
-## 3.2 Pull Auper Face Recognition Docker Image
+## 2.2 Pull Auper Face Recognition Docker Image
 
 ```bash
 sudo docker pull auperastor/aupera_face_recognition:3.0.2
@@ -24,7 +24,7 @@ sudo docker images | grep aupera_face_recognition
 ```
 ---
 
-## 3.3 Copy Firmware, Driver & License configuration file from Docker image
+## 2.3 Copy Firmware, Driver & License configuration file from Docker image
 
 
 ```bash
@@ -47,8 +47,8 @@ sudo docker cp face_recognition:/root/drm /opt/aupera/face-recognition
 
 ---
 
-# 4. Setting up Alveo U30 Card
-## 4.1 Install U30 Firmware
+# 3. Setting up Alveo U30 Card
+## 3.1 Install U30 Firmware
 
 <b> Source XRT env and check the current XRT version. Currently XRT version 2.11 or above are required for the firmware installation. </b>
 
@@ -102,7 +102,7 @@ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 08:00.1 --path /opt/aupera/
 
 ---
 
-## 4.2 Install U30 Driver
+## 3.2 Install U30 Driver
 
 ```bash
 cd {NFS_ABS_PATH}/driver
@@ -113,9 +113,9 @@ sudo ./install.sh
 
 ---
 
-# 5. Run Docker
+# 4. Run Docker
 
-## 5.1 Copy Access Key & License Configuration File to DRM Path
+## 4.1 Copy Access Key & License Configuration File to DRM Path
 
 + Refer to **[Section 1](#Section-1)** above to generate Access Key File (cred.json) and copt to `{NFS_ABS_PATH}/drm` path
 + Choose suitable License configuration file ( Either Floating Licence or Nodelocked Licence ) & copy to `{NFS_ABS_PATH}/drm` path  
@@ -132,7 +132,7 @@ sudo cp {NFS_ABS_PATH}/drm/nodelocked/conf.json {NFS_ABS_PATH}/drm/conf.json
 ```
 ---
 
-## 5.2 Docker Run
+## 4.2 Docker Run
 
 ```bash
 sudo docker run -dit --name {CONTAINER_NAME} -v {NFS_ABS_PATH}:{NFS_ABS_PATH} -e NFS_ABS_PATH={NFS_ABS_PATH} -p 56108:56108 aupera_face_recognition:3.0.2 bash
@@ -144,7 +144,7 @@ sudo docker run -dit --name face_recognition -v /opt/aupera/face-recognition/:/o
 ```
 ---
 
-## 5.3 Start Face Recognition Service
+## 4.3 Start Face Recognition Service
 
 ```bash
 sudo docker container exec -it {CONTAINER_NAME} bash start.sh
@@ -157,7 +157,7 @@ sudo docker container exec -it face_recognition bash start.sh
 
 ---
 
-# 6. Install the Client Software on Windows_Client_PC
+# 5. Install the Client Software on Windows_Client_PC
 ### Perform below steps on Windows_Client_PC : 
 + Download **Aupera Face Recognition Client Software** from [Aupera Download Page](https://auperatechnologies.com/downloads/)
 + Extact the downloaded **dist.zip** file & go to the path : **dist\dist\client**
@@ -168,7 +168,7 @@ For detailed instructions please refer to the section 5 of [Aupera_FR_U30_User g
 
 ---
 
-# 7. Perform the Test
+# 6. Perform the Test
 ### There are two ways to perform the Test: 
 
 + Connect IP camera to setup live streaming
@@ -180,6 +180,6 @@ For detailed instructions please refer to the section 5 of [Aupera_FR_U30_User g
 
 ---
 
-# 8. Results
+# 7. Results
 Once you complete above setting, you should be able to click ‘View Live Result’ on the in the Aupera’s Windows Client Software and view the face recognition result.
 ![Results](assets/aupera_facial_recognition/results.png)
