@@ -50,7 +50,8 @@ sudo docker cp face_recognition:/root/drm /opt/aupera/face-recognition
 # 3. Setting up Alveo U30 Card
 ## 3.1 Install U30 Firmware
 
-<b> Source XRT env and check the current XRT version. Currently XRT version 2.11 or above are required for the firmware installation. </b>
+<b> 
+  + Source XRT env and check the current XRT version. Currently XRT version 2.11 or above are required for the firmware installation. </b>
 
 ```bash
 source /opt/xilinx/xrt/setup.sh
@@ -63,7 +64,8 @@ XCLMGMT: 2.11.634
 
 ---
 
-<b> Run "lspci" command to validate the U30 board seen by the OS </b>
+<b> 
+  + Run "lspci" command to validate the U30 board seen by the OS </b>
 
 ```bash
 sudo lspci -d 10ee:
@@ -79,7 +81,8 @@ sudo lspci -d 10ee:
 
 ---
 
-<b> Flash the U30 board using XRT xbmgmt utility: </b>
+<b> 
+  + Flash the U30 board using XRT xbmgmt utility: </b>
 
 ```bash
 sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card {card_id} --path {binfile}.bin
@@ -89,7 +92,8 @@ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card {card_id} --path {binfile}.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{binfile}** is the file name of the Aupera firmware QSPI flash dump file in the directory {NFS_ABS_PATH}/firmware/<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **Flash another xu30 device with the second card_id read from lspci (like 08:00:1) using the same flash dump binfile**
 
-<b> An example of the command lines to flash both the xu30 devices: </b>
+<b> 
+  + An example of the command lines to flash both the xu30 devices: </b>
 
 ```bash
 sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 07:00.1 --path /opt/aupera/face-recognition/firmware/xu30-qspi-burn-fr-mtd.bin
@@ -164,7 +168,9 @@ sudo docker container exec -it face_recognition bash start.sh
 + Run **client.exe** Application. This will setup Client Software on Windows_Client_PC
 
 For detailed instructions please refer to the section 5 of [Aupera_FR_U30_User guide.](https://www.xilinx.com/content/dam/xilinx/publications/user-guide/partner/aupera-user-guide.pdf) </br></br>
-<b> Note : Turn off firewall settings that are blocking Client-Server communication. ( Eg : McAfee Endpoint Security -> Firewall -> OPTIONS : Untick 'Enable Firewall' ) 
+<b> Note : 
++ Turn off firewall settings that are blocking Client-Server communication.
++ Example : McAfee Endpoint Security -> Firewall -> OPTIONS : Untick 'Enable Firewall' 
 
 ---
 
