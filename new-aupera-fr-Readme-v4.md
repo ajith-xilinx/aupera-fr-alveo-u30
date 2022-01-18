@@ -63,8 +63,7 @@ XCLMGMT: 2.11.634
 
 ---
 
-<b> 
-### Run "lspci" command to validate the U30 board seen by the OS </b>
+<b> ➤&nbsp; Run "lspci" command to validate the U30 board seen by the OS </b>
 
 ```bash
 sudo lspci -d 10ee:
@@ -80,8 +79,7 @@ sudo lspci -d 10ee:
 
 ---
 
-<b> 
-  + Flash the U30 board using XRT xbmgmt utility: </b>
+<b> ➤&nbsp; Flash the U30 board using XRT xbmgmt utility: </b>
 
 ```bash
 sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card {card_id} --path {binfile}.bin
@@ -91,8 +89,7 @@ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card {card_id} --path {binfile}.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{binfile}** is the file name of the Aupera firmware QSPI flash dump file in the directory {NFS_ABS_PATH}/firmware/<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **Flash another xu30 device with the second card_id read from lspci (like 08:00:1) using the same flash dump binfile**
 
-<b> 
-  + An example of the command lines to flash both the xu30 devices: </b>
+<b> ➤&nbsp; An example of the command lines to flash both the xu30 devices: </b>
 
 ```bash
 sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 07:00.1 --path /opt/aupera/face-recognition/firmware/xu30-qspi-burn-fr-mtd.bin
@@ -101,7 +98,7 @@ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 08:00.1 --path /opt/aupera/
 
 ---
 
-<b> After flash, cold reboot server. Please do not use ‘sudo poweroff’ or ‘sudo reboot’ command. </b>
+<b> Note: After flash, cold reboot server. Please do not use ‘sudo poweroff’ or ‘sudo reboot’ command. </b>
 
 ---
 
