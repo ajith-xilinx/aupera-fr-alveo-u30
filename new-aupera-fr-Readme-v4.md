@@ -51,7 +51,7 @@ sudo docker cp face_recognition:/root/drm /opt/aupera/face-recognition
 ## 3.1 Install U30 Firmware
 
 <b> 
-  + Source XRT env and check the current XRT version. Currently XRT version 2.11 or above are required for the firmware installation. </b>
+### Source XRT env and check the current XRT version. Currently XRT version 2.11 or above are required for the firmware installation. </b>
 
 ```bash
 source /opt/xilinx/xrt/setup.sh
@@ -65,7 +65,7 @@ XCLMGMT: 2.11.634
 ---
 
 <b> 
-  + Run "lspci" command to validate the U30 board seen by the OS </b>
+### Run "lspci" command to validate the U30 board seen by the OS </b>
 
 ```bash
 sudo lspci -d 10ee:
