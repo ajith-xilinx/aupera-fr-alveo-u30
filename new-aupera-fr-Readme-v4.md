@@ -85,7 +85,7 @@ sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card {card_id} --path {binfile}.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{binfile}** is the file name of the Aupera firmware QSPI flash dump file in the directory {NFS_ABS_PATH}/firmware/<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **Flash another xu30 device with the second card_id read from lspci (like 08:00:1) using the same flash dump binfile**
 
-<b> An example of the command lines to flash both the xu30 devices: </b>
+<b> An example command lines to flash both the xu30 devices: </b>
 
 ```bash
 sudo /opt/xilinx/xrt/bin/xbmgmt flash --shell --card 07:00.1 --path /opt/aupera/face-recognition/firmware/xu30-qspi-burn-fr-mtd.bin
