@@ -10,7 +10,7 @@
 
 
 ```bash
-sudo apt update; sudo apt install make build-essential nfs-kernel-server docker docker-containerd docker.io
+sudo apt update; sudo apt install make build-essential nfs-kernel-server
 sudo service rpcbind restart
 sudo service nfs-kernel-server restart
 ```
