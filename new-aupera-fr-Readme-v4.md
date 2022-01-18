@@ -131,7 +131,7 @@ sudo cp {NFS_ABS_PATH}/drm/floating/conf.json {NFS_ABS_PATH}/drm/conf.json
 sudo cp {NFS_ABS_PATH}/drm/nodelocked/conf.json {NFS_ABS_PATH}/drm/conf.json
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{NFS_ABS_PATH}** is local directory where firmware and driver will copied to, like "/opt/aupera/face-recognition"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;»&nbsp; **{NFS_ABS_PATH}** is local directory where firmware and driver are copied to, like "/opt/aupera/face-recognition"
 
 ---
 
