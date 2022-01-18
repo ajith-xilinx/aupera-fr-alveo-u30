@@ -61,8 +61,6 @@ xbutil --version
 XCLMGMT: 2.11.634
 ```
 
----
-
 <b> Run "lspci" command to validate the U30 board seen by the OS </b>
 
 ```bash
