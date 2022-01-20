@@ -105,7 +105,7 @@ cd {NFS_ABS_PATH}/driver
 sudo ./install.sh
 ```
 
-<b> Note: Repeat this step (3.2 Install U30 Driver) everytime post cold reboot of the server. </b>
+<b> Note: Repeat this step (3.2 Install U30 Driver) every time post cold reboot of the server. </b>
 
 ---
 
@@ -114,15 +114,15 @@ sudo ./install.sh
 ## 4.1 Copy Access Key & License Configuration File to DRM Path
 
 + Refer to **Section 1** above to generate Access Key File (cred.json) and copy to `{NFS_ABS_PATH}/drm` path
-+ Choose suitable License configuration file ( Either Floating Licence or Nodelocked Licence ) & copy to `{NFS_ABS_PATH}/drm` path  
++ Choose suitable License configuration file ( Either Floating Licence or Nodelocked License ) & copy to `{NFS_ABS_PATH}/drm` path  
 
-<b> For Floating Licence Configuration : </b>
+<b> For Floating License Configuration : </b>
 
 ```bash
 sudo cp {NFS_ABS_PATH}/drm/floating/conf.json {NFS_ABS_PATH}/drm/conf.json
 ```
 
-<b> For Nodelocked Licence Configuration : </b>
+<b> For Nodelocked License Configuration : </b>
 ```bash
 sudo cp {NFS_ABS_PATH}/drm/nodelocked/conf.json {NFS_ABS_PATH}/drm/conf.json
 ```
@@ -159,8 +159,8 @@ sudo docker container exec -it face_recognition bash start.sh
 # 5. Install the Client Software on Windows Client PC
 ### Perform below steps on Windows Client PC : 
 + Download **Aupera Face Recognition Client Software** from [Aupera Download Page](https://auperatechnologies.com/downloads/)
-+ Extact the downloaded **dist.zip** file & go to the path : **dist\dist\client**
-+ Run **client.exe** Application. This will setup Client Software on Windows_Client_PC
++ Extract the downloaded **dist.zip** file & go to the path : **dist\dist\client**
++ Run **client.exe** Application. This will setup Client Software on Windows Client PC
 
 For detailed instructions please refer to the section 5 of [Aupera_FR_U30_User guide.](https://www.xilinx.com/content/dam/xilinx/publications/user-guide/partner/aupera-user-guide.pdf) </br></br>
 
