@@ -114,7 +114,7 @@ sudo ./install.sh
 ## 4.1 Copy Access Key & License Configuration File to DRM Path
 
 + Refer to **Section 1** above to generate Access Key File (cred.json) and copy to `{NFS_ABS_PATH}/drm` path
-+ Choose suitable License configuration file ( Either Floating Licence or Nodelocked License ) & copy to `{NFS_ABS_PATH}/drm` path  
++ Choose suitable License configuration file ( Either Floating License or Nodelocked License ) & copy to `{NFS_ABS_PATH}/drm` path  
 
 <b> For Floating License Configuration : </b>
 
